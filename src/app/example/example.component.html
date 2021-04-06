@@ -1,0 +1,6 @@
+<div *ngIf="!person">You forgot to pass a person object!</div>
+<div *ngIf="person">
+    <h1>Hello {{person.name}}!</h1>
+    <p *ngIf="person.age">You are {{person.age}} years old</p>
+    <button (click)="select()">Select</button>
+</div>

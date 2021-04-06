@@ -1,0 +1,11 @@
+<app-congratulations-message *ngIf="count >= 10"></app-congratulations-message>
+<app-counter-button
+    (counterClicked)="incrementCount()"
+    (resetClicked)="resetCount()"
+    [count]="count"
+></app-counter-button>
+<app-quotation author="Abe Lincoln">
+    <h4>Fourscore and seven years ago...</h4>
+    <p>...something happened</p>
+    <button>Learn more</button>
+</app-quotation>
